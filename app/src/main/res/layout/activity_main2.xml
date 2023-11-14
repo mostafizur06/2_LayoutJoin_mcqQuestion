@@ -4,14 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".MainActivity2">
 
     <TextView
-        android:id="@+id/outputViewID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="if a=5,b=6 then x=a+b?"
+        android:textSize="45sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Total marks will be published"
-        android:textSize="32sp" />
+        android:layout_marginTop="64sp">
+
+        <RadioButton
+            android:id="@+id/radioBtn1Id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:textSize="45sp" />
+
+        <RadioButton
+            android:id="@+id/radioBtn2Id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:textSize="45sp" />
+
+        <RadioButton
+            android:id="@+id/radioBtn3Id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11"
+            android:textSize="45sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submitBtnIDId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64sp"
+        android:text="sumbit"
+        android:onClick="submitFunction"
+        android:textSize="45sp" />
+
 </LinearLayout>
